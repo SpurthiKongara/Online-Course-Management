@@ -46,7 +46,8 @@ The site is deployed live via GitHub Pages:
 ## 📷 Screenshot
 This screenshot shows the **successful enrollment confirmation**, listing the courses a user has enrolled in:
 
-![Enrolled Courses Screenshot](img/Screenshot-2025-12-26-060010.png)
+![Enrolled Courses Screenshot](Screenshot-2025-12-26-060010.png)
+
 
 ---
 
