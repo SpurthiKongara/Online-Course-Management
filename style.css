@@ -1,0 +1,258 @@
+
+*{
+margin:0px;
+padding:0px;
+}
+
+body{
+ 
+}
+
+.topheader{
+   
+   background-color:grey;
+   color:white;
+   font-size:18px;
+   height:25px;
+   padding-left:5px;
+   padding-right:5px;
+   padding-top:4px;
+   
+}
+
+.left{
+ float:left;
+}
+
+.right{
+float:right;
+}
+
+.header{
+		height:100px;
+
+}
+
+.row{
+width:100%;
+padding:19px;
+
+}
+
+.hp1{
+width:5%;
+float:left;
+}
+
+.hp1 img{
+width:60px;
+height:60px;
+}
+
+.hp2{
+width:50%;
+float:left;
+font-size:40px;
+padding-top:6px;
+font-family:Maiandra GD;
+}
+
+.hp3{
+width:10%;
+float:right;
+padding:8px;
+margin-top:20px;
+margin-right:40px;
+background-color:green;
+text-align:center;
+border-radius:10px;
+font-weight:bold;
+}
+
+.but{
+text-decoration:none;
+color:white;
+}
+
+
+.hp3:hover{
+background-color:red;
+color:white;
+}
+
+.menubar{
+   height:33px;
+   background-color:grey;
+   color:white;
+  font-size:18px;
+}
+
+.menubar ul{
+width:100%;
+list-style-type:none;
+
+
+
+}
+
+.menubar ul li{
+float:left;
+}
+
+.menubar ul li a{
+text-decoration:none;
+color:black;
+padding-left:30px;
+float:left;
+font-size:18px;
+padding:10px;
+font-weight:bold;
+font-family:'Arial';
+display:block;
+padding-left:55px;
+padding-right:55px;
+padding-top:8px;
+
+
+}
+
+.menubar ul li a:hover{
+background-color:blue;
+color:white;
+border-radius:9px;
+padding-bottom:3px;
+
+
+}
+
+.bodypart{
+height:750px;
+}
+
+.footer{
+  height:400px;
+  background-color:black;
+  color:yellow;
+  padding:30px;
+}
+
+.sectitle{
+	text-align:center;
+	color:red;
+	font-weight:bold;
+	font-family:'calibri';
+}
+
+.courses{
+width:80%;
+margin:0 auto auto;
+}
+
+.coursediv{
+width:20%;
+border:1px solid grey;
+box-shadow:3px 6px red;
+float:left;
+margin:3% 2%;
+height:250px;
+border-radius:10px;
+}
+
+.coursediv img{
+width:100%;
+border-radius:10px;
+height:160px;
+}
+
+.coursediv a{
+text-decoration:none;
+color:black;
+text-align:center;
+margin-left:70px;
+font-weight:bold;
+}
+
+.success img{
+width:250px;
+height:350px;
+margin-right:30px;
+}
+
+.about{
+margin:0 auto auto;
+width:80%;
+text-align:center;
+}
+.part20{
+width:25%;
+float:left;
+}
+
+.part20 a{
+text-decoration:none;
+color:white;
+}
+
+.part40{
+width:40%;
+float:left;
+}
+
+.head{
+font-size:25px;
+
+}
+
+.footerform{
+width:370px;
+}
+
+.btn{
+background-color:lightblue;
+color:black;
+}
+
+.btn:hover{
+background-color:#00BFFF;
+}
+
+h2{
+color:blue;
+}
+
+
+
+
+.loginform{
+margin:0 auto auto;
+width:30%;
+margin-bottom:100px;
+margin-top:50px;
+text-align:center;
+}
+
+.enroll{
+background-color:green;
+color:white;
+text-align:center;
+margin-top:8px;
+margin-left:50px;
+width:100px;
+padding:5px;
+border-radius:5px;
+}
+
+.enroll:hover{
+background-color:blue;
+color:white;
+}
+
+.note{
+background-color:yellow;
+color:red;
+font-family:'calibri';
+text-align:center;
+padding:10px;
+font-size:30px;
+border:1px dashed red;
+}

@@ -1,0 +1,211 @@
+<html>
+ <head>
+		<title>Assignment | Nice Website</title>
+		<link rel="stylesheet" href="style.css" type="text/css">
+		<script type="text/javascript">
+			
+			
+			var courses=new Array();
+			var ccount=0;
+
+			function enrollme(course)
+			{
+				
+				
+				courses[ccount]=course;
+				ccount++;
+				
+				
+				var clist="";
+				for(var i=0;i<courses.length;i++)
+				clist=clist+"\n"+courses[i];
+
+				var message="Congratullations..!\nYou are successfully  enrolled in the following courses\n\n"+clist;
+				alert(message);
+			}
+
+			function check()
+			{	
+				try{
+					
+				//seprate pwd and username
+				var urlstring=window.location.search;
+				// separate ?
+				var checkstr=urlstring.substring(1);
+				var splitarray=checkstr.split('&',2);
+				//indexOf= means 0 || +1 means the next to it
+				var uname=splitarray[0].substring(splitarray[0].indexOf('=')+1);
+				var pwd=splitarray[1].substring(splitarray[1].indexOf('=')+1);
+				if(uname=='nice' && pwd=='nice123')
+				{
+					alert("Dear memeber ,welcome to course enrollement page");
+				}
+				else
+				{
+					alert("You must login properly");
+					window.location.href="login.html";
+				}
+			}
+			catch(err)
+			{
+				
+					alert("You must login properly");
+					window.location.href="login.html";
+			}
+			}
+
+		</script>
+ </head>
+ <body onload="check()">
+
+		 <div class="topheader">
+				<div class="left">spurthikongara@gmail.com</div>
+				<div class="right">Instagram-Id:Sonukongara</div>
+		 </div>
+
+    <div class="header">
+			<div class="row">
+			   <div class="hp1"><img src="img\nice logo.jpeg"/></div>
+			   <div class="hp2">Nice Tech Solutions</div>
+				<div class="hp3"><a class="but" href="login.html">Log out</a></div>
+			</div>
+		</div>
+
+
+		<div class="menubar">
+			<ul>
+				<li class="one"><a href="index.html">Home</a></li>
+				<li class="two"><a href="#about">About</a></li>
+				<li class="three"><a href="#bodypart">Courses</a></li>
+				<li class="four"><a href="#success">Success Milestones</a></li>
+			</ul>
+		</div><br/>
+	
+			<div class="bodypart" id="bodypart">
+			<h1 class="sectitle">Courses Available</h1>
+				
+				<div class="courses">
+					<div class="coursediv">
+					<img src="img\c lanminipro.jpeg"/><br/><br/>
+					<a href="#"  style="text-align:center ">C-Language</a>
+					<button class="enroll" onclick="enrollme('C-Language')">Enroll</button>
+					</div>
+
+					<div class="coursediv">
+					<img src="img\c++.jpg"/><br/><br/>
+					<a href="#" >C++</a>
+					<button class="enroll" onclick="enrollme('C++')">Enroll</button>
+					</div>
+
+					<div class="coursediv">
+					<img src="img\java.jpg"/><br/><br/>
+					<a href="#">Java</a>
+					<button class="enroll" onclick="enrollme('Java')">Enroll</button>
+					</div>
+
+					<div class="coursediv">
+					<img src="img\python.jpg"/><br/><br/>
+					<a href="#">Python</a>
+					<button class="enroll" onclick="enrollme('Python')">Enroll</button>
+					</div>
+
+					<div class="coursediv">
+					<img src="img\mysql.jpg"/><br/><br/>
+					<a href="#">My-SQL</a>
+					<button class="enroll" onclick="enrollme('My-SQL')">Enroll</button>
+					</div>
+
+					<div class="coursediv">
+					<img src="img\oracale.jpg"/><br/><br/>
+					<a href="#">Oracle</a>
+					<button class="enroll" onclick="enrollme('Oracle')">Enroll</button>
+					</div>
+
+					<div class="coursediv">
+					<img src="img\autocad.jpg"/><br/><br/>
+					<a href="#">AutoCAD</a>
+					<button class="enroll" onclick="enrollme('AutoCAD')">Enroll</button>
+					</div>
+
+					<div class="coursediv">
+					<img src="img\accounts.jpg"/><br/><br/>
+					<a href="#">Accounts</a>
+					<button class="enroll" onclick="enrollme('Accounts')">Enroll</button>
+					</div>
+				</div>
+		</div>
+	
+	<hr/><br/>
+		<h1  class="sectitle">Success Milestones</h1><br/><br/>
+		<div class="success" id="success">
+		<marquee>
+		 <img src="img\sucess.jpg">
+		 <img src="img\sucess.jpg">
+		 <img src="img\sucess.jpg">
+		 <img src="img\sucess.jpg">
+		 <img src="img\sucess.jpg">
+		</marquee>
+		</div><br/>
+		<hr/>
+
+		<div class="about" id="about">
+		<h1  class="sectitle">About</h1><br/><br/>
+		NICE TECH SOLUTIONS is an institute was established on 23rd March 2010<br/>
+
+		Which is directed by: Kongara Spurthi<br/>
+
+		It is an ISO-Certified institute.<br/>
+
+		<h2>Courses offered are:</h2>
+
+		Pacakges: MS office, DTP.Accounts, Photoshop Languages: C. C+, C++ java, python, net<br/>
+
+		Databases: Oracle, mysql, Ms-sql.sql server, dbase, sybase, dbl<br/>
+
+		Web designing Courses html, css, java script, bootstrap, dom. jquery<br/>
+
+		Frame works spring and hybernet, django<br/>
+
+		Civil courses: AUTOCAD, STADPRO, PROVIEW<br/>
+
+		email spurthikongara@gmail.com<br/>
+
+		Phone:9705945020<br/>
+		</div></br><br/>
+
+		<div class="footer">
+			<div class="part20">
+				<h1 class="head">Youtube channel link</h1><br/>
+				<a href="#">Programming Basics</a><br/>
+				<a href="#">C language</a><br/>
+				<a href="#">Java</a><br/>
+				<a href="#">Python</a><br/>
+				<a href="#">Html</a><br/>
+				<a href="#">Javascript</a><br/>
+				<a href="#">C#</a><br/>
+			</div>
+
+			<div class="part20">
+				<h1 class="head">Social media link</h1><br/>
+				<a href="#">Instagram</a><br/>
+				<a href="#">Facebook</a><br/>
+				<a href="#">Twitter</a><br/>
+				<a href="#"></a><br/>
+			</div>
+
+			<div class="part20">
+				<h1 class="head">Submit your requests</h1><br/>
+				
+				
+				<form>
+				Email:<br/>
+				<input type="email" class="footerform"><br/>
+				Request:<br/>
+				<textarea rows="10"  cols="48"></textarea><br/><br/>
+				<input type="submit" value="submit" class="footerform btn" >
+				</form>
+			</div>
+			
+		</div>
+ </body>
+</html>

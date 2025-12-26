@@ -1,0 +1,113 @@
+<html>
+ <head>
+  <title>Assignment | Nice Website</title>
+		<link rel="stylesheet" href="style.css" type="text/css">
+  
+  <script type="text/javascript">
+  		
+		function check()
+		{
+			
+			var email=document.getElementById("uname").value;
+			var pass=document.getElementById("pwd").value;
+
+			if (email=='nice' && pass=='nice123')
+		{
+			document.getElementById("form1").action="home.html";	
+		}
+		
+		else
+		{
+			document.getElementById("err").innerHTML="Username and password is incorrect";
+			return false;
+		}
+		}
+	
+	
+	
+	
+	
+  </script>
+  
+ </head>
+ <body>
+ 	
+  
+	<div class="topheader">
+			<div class="left">spurthikongara@gmail.com</div>
+			<div class="right">Instagram-Id:Sonukongara</div>
+		</div>
+  
+    <div class="header">
+			<div class="row">
+			   <div class="hp1"><img src="img\nice logo.jpeg"/></div>
+			   <div class="hp2">Nice Computers</div>
+			   
+			</div>
+		</div>
+
+	
+	<div class="menubar">
+			<ul>
+				<li class="one"><a href="index.html">Home</a></li>
+				<li class="two"><a href="#about">About</a></li>
+				<li class="three"><a href="#bodypart">Courses</a></li>
+				<li class="four"><a href="#success">Success Milestones</a></li>
+			</ul>
+		</div><br/>
+	
+	
+	
+	<div class="bodypart">
+
+			<h1  class="sectitle">Login Form</h1><br/>
+			<form id="form1" name="form1" class="loginform" onsubmit="return check()">
+			Username
+			<input type="text" id="uname" name="uname" value="" /><br/><br/>
+			Password
+			<input type="password" id="pwd" name="pwd" value="" /><br/><br/>
+			
+			<input type="submit" value="Sign in"  /><br/><br/>
+			</form>
+			<div id="err" style="color:red;text-align:center;font-size:20px;font-weight:bold;font-family:calibri;"></div>
+	
+	</div>
+	<br/><br/>
+	
+	
+	
+		<div class="footer">
+			<div class="part20">
+				<h1 class="head">Youtube channel link</h1><br/>
+				<a href="#">Programming Basics</a><br/>
+				<a href="#">C language</a><br/>
+				<a href="#">Java</a><br/>
+				<a href="#">Python</a><br/>
+				<a href="#">Html</a><br/>
+				<a href="#">Javascript</a><br/>
+				<a href="#">C#</a><br/>
+			</div>
+
+			<div class="part20">
+				<h1 class="head">Social media link</h1><br/>
+				<a href="#">Instagram</a><br/>
+				<a href="#">Facebook</a><br/>
+				<a href="#">Twitter</a><br/>
+				<a href="#"></a><br/>
+			</div>
+
+			<div class="part20">
+				<h1 class="head">Submit your requests</h1><br/>
+				
+				
+				<form>
+				Email:<br/>
+				<input type="email" class="footerform"><br/>
+				Request:<br/>
+				<textarea rows="10"  cols="48"></textarea><br/><br/>
+				<input type="submit" value="submit" class="footerform btn" >
+				</form>
+			</div>
+	</div>
+ </body>
+</html>
